@@ -9,12 +9,12 @@
         "WS_API": "wss://api.onyx.eth2stats.io/ws"
     },
     "network": {
-        "name": "Onyx Testnet",
+        "name": "Eth2 attacknet",
         "joinURL": "https://prylabs.net/participate",
         "issuesURL": "https://github.com/Alethio/eth2stats-dashboard/issues",
         "forkURL": "https://github.com/ConsenSys/eth2stats-dashboard",
         "serverAddr": "grpc.onyx.eth2stats.io:443",
-        "forkName": "Aleth.io"
+        "forkName": "eth2-attacknet"
     },
     "others": {
         "Onyx Testnet": "https://eth2stats.io/onyx-testnet",
