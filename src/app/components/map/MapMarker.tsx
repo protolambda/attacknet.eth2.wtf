@@ -23,7 +23,7 @@ export const MapMarker: React.FC<IMapMarkerProps> = (props) => {
             coordinates={[props.marker.long, props.marker.lat]}
             data-tip={props.marker.id}
         >
-            <circle r={radius} fill="#347CFC" />
+            <circle r={radius} className="map-marker" />
         </Marker>
     );
 };

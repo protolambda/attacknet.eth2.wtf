@@ -55,7 +55,7 @@ export const MapChart: React.FC<IMapChartProps> = observer((props) => {
                           key={geo.rsmKey}
                           geography={geo}
                           clipPath="url(#rsm-sphere)"
-                          fill="#172232"
+                          className="bg-geography"
                       />
                   ))
               }
