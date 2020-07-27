@@ -50,9 +50,9 @@ export const BottomNav: React.FC<IBottomNavProps> = (props) => (
                     : <div className="flex items-center">
                         <span className="mr-2">Fork of</span>
                         <a href="https://github.com/ConsenSys/eth2stats-dashboard"
-                           className="text-grey-600 hover:text-primary-500 transition"
+                           className="text-grey-600 hover:text-primary-500 transition mr-2"
                            target="_blank">Aleth.io Eth2stats</a>
-                        <span className="mr-2">(MIT license)</span>
+                        <span>(MIT license)</span>
                     </div>
                 }
             </div>
