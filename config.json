@@ -4,7 +4,6 @@
         "WS_API": "ws://localhost:8080/ws"
     },
     "remote": {
-        // change this to some actual eth2stats-server details
         "HTTP_API": "https://api.attacknet.eth2.wtf/api",
         "WS_API": "wss://api.attacknet.eth2.wtf/ws"
     },
@@ -22,6 +21,5 @@
         "Witti Testnet (Deprecated)": "https://eth2stats.io/witti-testnet",
         "Topaz Testnet (Deprecated)": "https://eth2stats.io/topaz-testnet"
     },
-    // Set to false when hosting with a dynamic webhost instead of something static like IPFS or github-pages.
     "hashRouter": true
 }

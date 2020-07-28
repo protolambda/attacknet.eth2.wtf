@@ -23,7 +23,7 @@ jobs:
 
       - name: Add Eth2stats config
         run: |
-          cp config.jsonc dist/config.json
+          cp config.json dist/config.json
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.5.7

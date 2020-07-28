@@ -12,8 +12,7 @@ let app = express();
 app.use(morgan("dev"));
 
 app.get("/config.json", (req, res) => {
-    let configJsonc = fs.readFileSync("../config.jsonc", "utf8");
-    let configJson = stripComments(configJsonc);
+    let configJson = fs.readFileSync("../config.json", "utf8");
     res.setHeader("Content-Type", "application/json");
     if (process.env.ETH2STATS_DEV_SERVER === "true") {
         res.setHeader("X-Local-Dev", "true")
