@@ -117,6 +117,15 @@ export class Store {
         this.local = config.isLocal();
         // make sure the websocket service is started, now that we have data.
         this.websocketsService.start();
+
+        // when the config changes, update the stats to make the new config effective
+        this.fetchNetworkDetails().then(() => {
+            this.stats.start(this.networkGenesisTime);
+        }).catch((err) => {
+            // tslint:disable-next-line: no-console
+            console.log(err);
+            this.notify.error("Got error while fetching network details.");
+        });
     }
 
     getConfig() {

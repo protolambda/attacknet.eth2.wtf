@@ -9,9 +9,11 @@ export class Stats {
     interval: number;
 
     start(networkGenesisTime: string) {
-        this.networkGenesisTime = Math.floor(
-            new Date(networkGenesisTime).getTime() / 100) / 10;
-        this.interval = setInterval(() => { this.calculateCurrentState(); }, 100);
+        if (!this.networkGenesisTime) {
+            this.networkGenesisTime = Math.floor(
+                new Date(networkGenesisTime).getTime() / 100) / 10;
+            this.interval = setInterval(() => { this.calculateCurrentState(); }, 100);
+        }
     }
 
     stop() {
